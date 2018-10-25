@@ -1,9 +1,7 @@
 import java.util.ArrayList;
-
-public class NaiveAttempt {
+public class SortArrayListString {
 
 	public static void main(String [] args) {
-
 		ArrayList<String> things = new ArrayList<String>();
 
 		things.add("Cup");
@@ -17,11 +15,5 @@ public class NaiveAttempt {
 		java.util.Collections.sort(things);
 		
 		System.out.println("Sorted? " + things);
-
-
-
-
-
 	}
-
 }
