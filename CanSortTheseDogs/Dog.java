@@ -17,14 +17,14 @@ public class Dog implements Comparable<Dog>  {
 		// return 0 if this == otherDog, according to my "order"
 		// return positive if this > otherDog, according to my "order"
 		
-		// return this.name.compareTo(otherDog.name);
+		return this.name.compareTo(otherDog.name);
 
-		if (this.name.compareTo(otherDog.name) < 0) {
-			return -1;
-		} else if (this.name.equals(otherDog.name)) {
-			return 0; 
-		} else {
-			return 1;
-		}			
+		// if (this.name.compareTo(otherDog.name) < 0) {
+		// 	return -1;
+		// } else if (this.name.equals(otherDog.name)) {
+		// 	return 0; 
+		// } else {
+		// 	return 1;
+		// }			
 	}
 }
