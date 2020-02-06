@@ -19,9 +19,16 @@ public class SortDogs4 {
 		Comparator<Dog> sortByWeight = new Comparator<Dog>() {
 			@Override
 			public int compare(Dog o1, Dog o2) {
+				System.out.println("Hello from the Comparator");
 				return Double.compare(o1.getWeight(), o2.getWeight());
 			}
 		};
+
+		Comparator<Dog> sortByWeight2 = (o1,o2)->{
+			System.out.println("Hello from the Comparator");
+			return Double.compare(o1.getWeight(), o2.getWeight());
+		};
+
 		kennel.sort(sortByWeight);
 		System.out.println("Sorted by weight " + kennel);
 	}

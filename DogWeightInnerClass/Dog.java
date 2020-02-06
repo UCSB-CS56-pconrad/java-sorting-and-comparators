@@ -1,3 +1,5 @@
+package dogs;
+
 public class Dog implements Comparable<Dog>  {
 
 	private String name;
