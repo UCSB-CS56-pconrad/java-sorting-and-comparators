@@ -32,13 +32,20 @@ public class SortDogs5 {
 
 		System.out.println("Sorted by length of name: " + kennel);
 
-
 		Comparator<Dog> byNameLength = (d1,d2) ->   d1.getName().length() - d2.getName().length();
-		Comparator<Dog> byName = (d1,d2) ->   d1.getName().compareTo(d2.getName());
+		Comparator<Dog> byName = (d1,d2) -> d1.getName().compareTo(d2.getName());
 
 		kennel.sort( byNameLength.thenComparing(byName) );
 
 		System.out.println("Sorted by length of name then lex by name" + kennel);
+		
+		kennel.sort( byName.reversed() );
+		System.out.println("Sorted by name in reverse order" + kennel);
+
+		kennel.sort( sortByWeight.reversed() );
+		System.out.println("Sorted by weight in reverse order" + kennel);
+
+		System.out.println("Sorted by weight in reverse order" + kennel);
 
 	}
 
